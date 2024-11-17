@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elementos flutuantes</title>
+	<meta charset="utf-8">
+	
+	<style type="text/css">
+
+		#principal{
+			border: 5px solid red;
+			background: green;
+		}
+
+		.conteudo{
+			background: blue;
+			border: 1px solid gray;
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+	        float: right;
+
+		}
+
+		/*(o float serve para deixar o conteudo flutuante em cima de outro conteudo, podendo seu usado o left, right ou none)
+
+		.conteudo1{
+			background: red;
+			border: 1px solid gray;
+			width:200px;
+			height: 200px;
+			margin: 10px;
+			float: left;
+		}*/
+
+		.conteudo-zero{
+			background: red;
+			border: 1px solid gray;
+			width:200px;
+			height: 200px;
+			margin: 10px;}
+
+		/*no clear pode ser usado para limpar o fluxo flutuante da class no paragrafo, nele pode ser colocado o left right both(independente do lado ele vai limpar) ou none(caso nao queira limpar o fluxo)*/
+		
+		.clear{
+			clear: both;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="principal"> 
+	
+		<div class="conteudo">
+			conteudo1
+		</div>
+
+		<div class="conteudo">
+			conteudo2
+		</div>
+
+		<div class="conteudo">
+			conteudo3
+		</div>
+
+		<p class="clear"> is a fact known to everyone that a reader will be distracted by the readable text content of a page when examining its layout. The advantage of using Lorem Ipsum is that it has a normal letter distribution, as opposed to "Content here, content here", making it look similar to that of readable text. Many publishing software and website editors now use Lorem Ipsum as standard model text, and a quick search for 'lorem ipsum' shows several websites still in their construction phase. Several new versions have emerged over the years, eventually by accident, and sometimes on purpose ( injecting humor, and the like ).
+		</p>
+		<!--essa div serve para quando quer que apareça as alteraçoes do clear abaixo onde vai caber tudo dentro da borda
+			<div class="clear"></div>-->
+
+	</div>
+</body>
+</html>

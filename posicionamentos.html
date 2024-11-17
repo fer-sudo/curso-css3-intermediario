@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posicionamentos (static, relative, absolute e fixed)</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		
+		body{
+			background: #007fc7;
+		}
+
+		#container{
+			background: #FFF;
+			width: 800px;
+			margin: 10px auto;
+			position: relative;
+
+		}
+
+		h1 {
+
+			}
+		p {
+			width: 300px; /*aqui poderia colocar margin 0 px onde sumiria tda as margem dos paragrafos*/
+			}
+
+		.fixed{
+			border: 1px solid red;
+			background: #f2f2f2;
+			position: fixed;
+			top: 0px;
+			right:0px; /*aqui a classe fixed fica fixo mesmo com a rolagem para cima e para baixo continuará fixa com o movimento, usado para chat onde fica fixo na tela , menus ou lealts*/		}	
+		
+
+		.absolute{
+			border: 1px solid red;
+			background: #f2f2f2;
+			position: absolute;
+			top: 80px;
+			right: 80px;
+			/*aqui a posição relativa dignifica que tudo da classe absolute vai ficar dentro do padrao do container se nao ficaria de acordo com o body*/
+		}	
+		
+		.relative{
+			border: 1px solid red;
+			position: relative;
+			/*propriendades de deslocamento do relative quais podem usar para mudar a posicao do conteudo, nessa parte pode ser usado ate numeros negativos ai o seu deslocamento sera ao contrario (top, right, bottom, left)*/
+			top: 20px;
+			left: 80px;
+		}
+
+
+	</style>
+	
+</head>
+<body>
+
+	<div id="container">
+		<h1>posicionamentos</h1>
+
+		<p>
+			p1 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		</p>
+
+		<p class="fixed">
+			p2 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+
+		<p>
+			p3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<p>
+			p3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<p>
+			p3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<p>
+			p3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<p>
+			p3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+/*modelo de caixa, foi colocado varias formas de escrever as larguras das caixas*/
+
+.conteudo {
+    border: 1px solid red;
+/* uma forma de riar espaçamento na caixa->
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;*/
+/*outra forma de criar espaçamento na caixa onde cada lado fica de um tamanho->
+    padding: 20px 15px 10px 5px*/
+     padding: 20px;
+    
+/*uma forma de escrever margin
+    margin-top: 20px; 
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;*/
+ 
+    margin: 10px;
+    
+    width: 150px; 
+}
+   
+/*formatação do conteudo2 */
+ .conteudo2 {
+    margin: 50px;
+    width: 150px;
+    border: 1px solid red;
+}
+   
+
+
